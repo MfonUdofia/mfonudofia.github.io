@@ -19,10 +19,18 @@
   color: var(--mfon-text-red) !important;
 }
 
-/* Hero section size */
+/* Hero section size - Fixed to full height */
+header.masthead {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px; /* Ensures it doesn't get too squished on tiny mobile screens */
+}
+
 header.masthead .intro-text {
-  padding-top: 100px !important;
-  padding-bottom: 100px !important;
+  padding-top: 0 !important; /* Remove fixed padding */
+  padding-bottom: 0 !important;
 }
 /* Hero text stays readable over the image. */
 .masthead .intro-lead-in {
