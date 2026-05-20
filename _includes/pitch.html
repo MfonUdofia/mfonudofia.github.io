@@ -11,14 +11,17 @@
     <div class="row justify-content-center">
       <div class="col-lg-9 text-center">
         <p class="large text-muted">{{ text.body }}</p>
+        
+        <!-- First Button -->
         {% if text.button %}
-          <!-- First Button -->
-<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mt-4" href="{{ text.buttonlink | default: '#contact' }}">{{ text.button }}</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mt-4" href="{{ text.buttonlink | default: '#contact' }}">{{ text.button }}</a>
+        {% endif %}
 
-<!-- Second Button -->
-{% if text.button2 %}
-  <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mt-4" href="{{ text.buttonlink2 | default: '#portfolio' }}" style="margin-left: 15px;">{{ text.button2 }}</a>
-{% endif %} 
+        <!-- Second Button -->
+        {% if text.button2 %}
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger mt-4" href="{{ text.buttonlink2 | default: '#portfolio' }}" style="margin-left: 15px;">{{ text.button2 }}</a>
+        {% endif %}
+        
       </div>
     </div>
   </div>
