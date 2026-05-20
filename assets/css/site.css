@@ -129,6 +129,10 @@ section h2.section-heading,
   border-color: var(--mfon-button-red) !important;
   color: #fff !important;
 }
+header.masthead .intro-text .btn {
+  position: relative;
+  left: 20px;
+}
 
 .portfolio-hover {
   background-color: rgba(128, 14, 19, 0.9) !important;
