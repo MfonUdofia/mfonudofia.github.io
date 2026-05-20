@@ -5,6 +5,7 @@ en: &DEFAULT_EN
     button: Graphic Design
     button2: Motion Design
     buttonlink: "#portfolio"
+    button2link: "#portfolio"
 
   portfolio:
     title: "My Work"
