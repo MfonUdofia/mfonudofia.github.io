@@ -128,9 +128,9 @@ section h2.section-heading,
   background-color: var(--mfon-button-red) !important;
   border-color: var(--mfon-button-red) !important;
   color: #fff !important;
-}
 header.masthead .intro-text .btn {
   position: relative;
+  top: 30px;
   left: 20px;
 }
 
