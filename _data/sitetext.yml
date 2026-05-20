@@ -3,7 +3,7 @@ en: &DEFAULT_EN
     title: "Hi, I'm Mfon Udofia"
     text: "A creative storyteller with experience in using digital tools to scale ideas."
     # First Button
-    button1: "Graphics design"
+    button: "Graphics design"
     buttonlink1: "#portfolio"
     # Second Button (Duplicate)
     button2: "Motion Graphics"
