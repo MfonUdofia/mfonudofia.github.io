@@ -1,107 +1,107 @@
 :root {
-  --mfon-button-red: #800e13;
-  --mfon-text-red: #bf141d;
+    --mfon-button-red: #800e13;
+    --mfon-text-red: #bf141d;
 }
 
 /* Header brand text: Mfon Udofia */
 #mainNav .navbar-brand {
-  color: var(--mfon-text-red) !important;
+    color: var(--mfon-text-red) !important;
 }
 
 /* Navbar links stay white until hover/active section state. */
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #fff !important;
+    color: #fff !important;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active,
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link:focus {
-  color: var(--mfon-text-red) !important;
+    color: var(--mfon-text-red) !important;
 }
 
 /* Hero section size - Fixed to full height */
 header.masthead {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 500px; /* Ensures it doesn't get too squished on tiny mobile screens */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px; /* Ensures it doesn't get too squished on tiny mobile screens */
 }
 
 header.masthead .intro-text {
-  padding-top: 0 !important; /* Remove fixed padding */
-  padding-bottom: 0 !important;
+    padding-top: 0 !important; /* Remove fixed padding */
+    padding-bottom: 0 !important;
 }
 /* Hero text stays readable over the image. */
 .masthead .intro-lead-in {
-  font-size: 3rem !important;
-  color: #f8f9fa !important;
+    font-size: 3rem !important;
+    color: #f8f9fa !important;
 }
 
 .masthead .intro-heading {
-  font-size: 4rem !important;
-  color: #f8f9fa !important;
+    font-size: 4rem !important;
+    color: #f8f9fa !important;
 }
 #portfolio {
-  position: relative;
-  background-color: #f8f9fa;
-  overflow: hidden;
+    position: relative;
+    background-color: #f8f9fa;
+    overflow: hidden;
 }
 
 #portfolio::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("../img/grid.png");
-  background-size: 80px 80px;
-  background-position: center;
-  background-repeat: repeat;
-  opacity: 0.5;
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../img/grid.png");
+    background-size: 80px 80px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.5;
+    pointer-events: none;
 }
 
 #portfolio .container {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 #blog {
-  position: relative;
-  background-color: #f8f9fa;
-  overflow: hidden;
+    position: relative;
+    background-color: #f8f9fa;
+    overflow: hidden;
 }
 
 #blog::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("../img/grid.png");
-  background-size: 80px 80px;
-  background-position: center;
-  background-repeat: repeat;
-  opacity: 0.5;
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../img/grid.png");
+    background-size: 80px 80px;
+    background-position: center;
+    background-repeat: repeat;
+    opacity: 0.5;
+    pointer-events: none;
 }
 
 #blog .container {
-  position: relative;
-  z-index: 1;
-  background-color: #fff;
-  padding: 60px 70px;
-  max-width: 900px;
-  margin: 0 auto;
-  border-radius: 0;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: 60px 70px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 0;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
 }
 
 /* Main page body section headings use the requested red. */
 section h2.section-heading,
 .page-section h2.section-heading {
-  color: var(--mfon-text-red) !important;
+    color: var(--mfon-text-red) !important;
 }
 
 /* Portfolio item titles stay white. */
 .portfolio-caption h4 {
-  color: #fff !important;
+    color: #fff !important;
 }
 
 /* Blog post titles stay white. */
@@ -116,8 +116,6 @@ section h2.section-heading,
 #pagecontainer ul.list-unstyled li h3 a:focus {
     color: var(--mfon-text-black) !important;
     font-size: 1.2rem !important;
-
-
 }
 
 /* Keep buttons on the existing darker red; this was not changed. */
@@ -125,56 +123,79 @@ section h2.section-heading,
 .btn-primary:active,
 .btn-primary:focus,
 .btn-primary:hover {
-  background-color: var(--mfon-button-red) !important;
-  border-color: var(--mfon-button-red) !important;
-  color: #fff !important;
+    background-color: var(--mfon-button-red) !important;
+    border-color: var(--mfon-button-red) !important;
+    color: #fff !important;
 }
 header.masthead .intro-text .btn {
-  position: relative;
-  top: 30px;
-  left: 20px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+/* Responsive Fixes for Mobile */
+@media only screen and (max-width: 767px) {
+    /* Fix Hero Text Sizes */
+    .masthead .intro-lead-in {
+        font-size: 1.8rem !important;
+    }
+    .masthead .intro-heading {
+        font-size: 2.5rem !important;
+    }
+
+    /* Center the hero button on mobile */
+    header.masthead .intro-text .btn {
+        left: 0 !important;
+        top: 20px !important;
+    }
+
+    /* Fix Blog Container Padding and Width */
+    #blog .container {
+        padding: 30px 20px !important;
+        width: 95% !important;
+        max-width: none !important;
+    }
 }
 
 .portfolio-hover {
-  background-color: rgba(128, 14, 19, 0.9) !important;
+    background-color: rgba(128, 14, 19, 0.9) !important;
 }
 
 footer.footer span.copyright {
-  font-family: "Kaushan Script", cursive !important;
-  font-size: 1.2rem !important;
-  font-weight: 400 !important;
-  letter-spacing: 0 !important;
-  text-transform: none !important;
-  color: var(--mfon-text-red) !important;
+    font-family: "Kaushan Script", cursive !important;
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+    color: var(--mfon-text-red) !important;
 }
 
 .footer .social-buttons li a {
-  width: 34px;
-  height: 34px;
-  font-size: 16px;
-  line-height: 34px;
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 34px;
 }
 
 .footer .social-buttons li a.custom-tiktok-link {
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  background-color: #212529 !important;
-  color: #fff !important;
-  line-height: 1 !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #212529 !important;
+    color: #fff !important;
+    line-height: 1 !important;
 }
 
 .footer .social-buttons li a.custom-tiktok-link .custom-tiktok-icon {
-  display: block;
-  width: 15px;
-  height: 15px;
-  fill: currentColor;
-  flex: 0 0 auto;
+    display: block;
+    width: 15px;
+    height: 15px;
+    fill: currentColor;
+    flex: 0 0 auto;
 }
-
 
 #contactForm textarea::placeholder,
 #contactForm input::placeholder {
-  color: #ced4da !important;
-  opacity: 1 !important;
+    color: #ced4da !important;
+    opacity: 1 !important;
 }

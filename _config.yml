@@ -1,12 +1,12 @@
 remote_theme: raviriley/agency-jekyll-theme
 
-url    : "https://mfonudofia.github.io"
-baseurl: "" 
+url: "https://mfonudofia.github.io"
+baseurl: ""
 
-title      : Mfon Udofia
-email      : mfonobongudofia81@gmail.com
+title: Mfon Udofia
+email: mfonobongudofia81@gmail.com
 description: "Personal website, portfolio, and blog of Mfon Udofia, a creative storyteller using digital tools to craft captivating and empathic stories."
-author     : Mfon Udofia
+author: Mfon Udofia
 
 locale: "en-US" # See available languages in _data/sitetext.yml
 
@@ -24,3 +24,4 @@ markdown: kramdown
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme

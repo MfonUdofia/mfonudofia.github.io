@@ -1,8 +1,8 @@
 #after any changes to the Gemfile, execute bundle update!
 source "https://rubygems.org"
 
+gem "jekyll", "~> 4.2.0"
 gem "jekyll-agency", "~> 1.2"
-gem "github-pages", group: :jekyll_plugins
 gem "jekyll-remote-theme"
 
 
